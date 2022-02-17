@@ -1,0 +1,22 @@
+@import url("styles/commonClasses.css");
+@import url("styles/themesColors.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+  --logo : #5367ff;
+  --red : rgb(242, 10, 10);
+  --borderImage : #235045;
+  --backDrop : rgba(0,0,0,0.6);
+  --lightGrey : rgb(239, 239, 239);
+  --comments :white;
+  --black : black;
+  --overLay : rgba(191, 179, 179, 0.139);
+}
+
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background);
+}

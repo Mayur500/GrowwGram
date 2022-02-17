@@ -1,0 +1,10 @@
+.fd21Content {
+  display: flex;
+}
+
+.lv21ListPhoto {
+  width: 100%;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+}

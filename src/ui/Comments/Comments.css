@@ -1,0 +1,133 @@
+.cm21Container {
+  z-index: 40;
+  position: fixed;
+  width: 70vw;
+  height: 80vh;
+  background-color: var(--comments);
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px var(--grey);
+  border-radius: 3px;
+}
+
+.cm21Left,
+.cm21Right {
+  width: 50%;
+  height: 100%;
+}
+.cm21Left{
+  background-color: var(--black);
+}
+.cm21Left > img {
+  width: 100%;
+  height: 100%;
+object-fit: contain;
+}
+
+.cm21Right {
+  display: flex;
+  flex-direction: column;
+}
+.cm21Right .cm21comments {
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.cm21Right textarea {
+  width: 100%;
+  padding: 0 0;
+  margin: auto 0;
+  resize: none;
+  border: none;
+  outline: none;
+}
+.cm21Right .cm21Middle {
+  height: 500px;
+}
+
+.cm21bottom .ft21Container {
+  padding: 20px 0;
+}
+
+.cm21comments {
+  position: relative;
+}
+
+.cm21Middle p {
+  padding-left: 30px;
+  font-family: "Times New Roman", Times, serif;
+  width: 90%;
+  margin: auto;
+}
+
+.hd21Comments{
+  align-items: center;
+}
+.hd21Comments h6{
+margin-left:10px;
+}
+
+.cm21post {
+  position: absolute;
+  background-color: var(--comments);
+  border: none;
+ 
+  right: 2%;
+  color: var(--logo);
+  font-weight: bolder;
+  cursor: pointer;
+  top: 50%;
+}
+.cm21bottom .ft21Top ,.cm21bottom .ft21TextBottom {
+  color : var(--black) !important;
+}
+.cm21Right .fh21Name , .cm21Right .fa-ellipsis-h:before {
+  color : var(--black) !important;
+}
+
+@media only screen and (max-width: 1058px) {
+  .cm21Container {
+    width: 90vw;
+    max-width: 780px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cm21Container {
+    flex-direction: column;
+    width: 90vw;
+    height: min-content;
+    max-height: 90vh;
+  }
+  .cm21Right {
+    width: 100%;
+  }
+  .cm21Left {
+    width: 100%;
+    object-fit: contain;
+  }
+  .cm21Right .cm21comments {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .cm21Right .cm21Middle {
+    flex: 0;
+  }
+  .cm21bottom .ft21Container {
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+
+  .cm21bottom :nth-child(2) > div {
+    text-align: justify;
+    width: 98%;
+    margin: auto auto;
+  }
+  .cm21Left > img {
+    object-fit: contain;
+    max-height: 300px;
+  }
+}

@@ -1,0 +1,105 @@
+.sb21Container {
+  flex: 1.2 1;
+}
+
+.sb21Input {
+  width: 15rem;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  background: var(--lightGrey);
+  transition: transform 0.1s ease-in-out;
+  /* border: solid black 2px; */
+  position: relative;
+  border: none;
+}
+.sb21InputWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.sb21InputResults {
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  overflow: scroll;
+  background: var(--lightGrey);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-top: -0.3rem;
+  max-height: 300px;
+}
+
+.sb21InputResults {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.sb21InputResults::-webkit-scrollbar { 
+  display: none;  
+}
+.sb21InputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: var(--grey);
+  transition: all 0.1s ease-in-out;
+}
+
+.sb21ResultsContainer p {
+  color: var(--logo);
+  font-size: small;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: var(--textGrey);
+}
+
+:focus::placeholder {
+  text-indent: -999px;
+}
+
+.sb21Input:focus {
+  outline: none;
+}
+
+.sb21ResultsContainer {
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index:60;
+}
+
+.sb21ResultsContainer :nth-child(2) {
+  flex: 2;
+  color:black;
+}
+
+.sb21ResultsContainer > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.sb21InputIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.5rem;
+  color: var(--textGrey);
+  transition: all 0.1s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1058px) {
+  .sb21Container {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .sb21Input {
+    width: 10rem;
+  }
+  .sb21InputWrapper {
+    display: none;
+  }
+}

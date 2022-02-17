@@ -1,0 +1,31 @@
+.fh21LeftImg {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid 2px var(--borderImage);
+}
+.threedots {
+  height: 10px;
+  width: 20px;
+}
+
+.fh21Name {
+  margin-left: 20px;
+  color:var(--secondary);
+}
+
+.fh21Name a{
+  text-decoration: none;
+  color:var(--secondary);
+}
+
+.fh21Container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fh21Container .fa-2x {
+ font-size: 1.2rem;
+}

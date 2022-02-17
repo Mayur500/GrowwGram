@@ -1,0 +1,39 @@
+.hd21Container {
+  width: 100%;
+  z-index: 50;
+  height: 70px;
+  position: fixed;
+  background-color: var(--primary);
+  top: 0;
+  border-bottom: solid 1px var(--grey);
+}
+
+.hd21Items {
+  justify-content: space-evenly;
+  margin: auto;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.hd21Logo {
+  flex: 1 0.9;
+  font-size: 2em;
+  font-family: cursive;
+  font-style:oblique;
+  color:var(--logo);
+  font-weight: 600;
+  cursor: pointer;
+}
+.hd21Logo {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1058px) {
+  .hd21Items {
+    justify-content: space-between;
+    width: 95%;
+    padding: auto auto;
+    box-sizing: border-box;
+    height: 63px;
+  }
+}

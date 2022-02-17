@@ -1,0 +1,98 @@
+.pi21Container {
+  padding: 32px 0px;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  padding-top: 5rem;
+  gap: 2rem;
+}
+
+.pi21ProfilePhoto {
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--logo);
+  width: 150px;
+}
+.pi21UserInfo {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color:var(--secondary);
+}
+
+.pi21UserInfo .pi21Username {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 12px 0px;
+  text-align: left;
+}
+
+.pi21UserStats {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+  width: 100%;
+}
+
+.pi21UserStats .pi21UserStatItem {
+  font-size: 20px;
+  color: var(--secondary);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.pi21UserStatFigure {
+  font-weight: 600;
+  margin-left: 6px;
+  margin-right: 0.5em;
+}
+
+.pi21UserFullName {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 6px 0px;
+}
+.pi21Loader {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .pi21Container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pi21Container {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 90%;
+  }
+  .pi21UserInfo {
+    margin-left: 0px;
+    flex-direction: column;
+    flex: 1;
+    min-width: 80%;
+  }
+  .pi21UserStats .pi21UserStatItem {
+    font-size: 16px;
+  }
+  .pi21UserInfo .pi21Username {
+    font-size: 22px;
+  }
+  .pi21UserFullName {
+    font-size: 16px;
+  }
+  .pi21UserStatFigure {
+    margin-left: 4px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .pi21UserInfo {
+    width: 100%;
+  }
+  .pi21UserStats .pi21UserStatItem {
+    font-size: 14px;
+  }
+}

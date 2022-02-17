@@ -1,0 +1,17 @@
+body , body[data-theme='light'] {
+  --background:#fafafa;
+  --grey:#dbdbdb;
+  --primary:#ffffff;
+  --textGrey:#a3a3a3;
+  --secondary:#000000;
+
+}
+body[data-theme='dark'] {
+  --background:#0e0e0e;
+  --grey:#3f3e3e;
+  --primary:#080808;
+  --textGrey:#757575;
+  --secondary:#ffffff;
+}
+
+

@@ -1,0 +1,29 @@
+
+.pu21Hide{
+  text-align: center;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1rem;
+ align-items: center;
+ color : var(--secondary);
+ padding:10px 0;
+}
+.pu21HideContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 20px;
+}
+.pu21HideUndo{
+  padding: 8px 17px;
+  border: none;
+  transition: all 1s linear;
+  border-radius: 4px;
+  background-color: var(--overLay);
+  color : var(--secondary);
+}
+.pu21HideUndo:hover{
+ background-color: var(--grey);
+}

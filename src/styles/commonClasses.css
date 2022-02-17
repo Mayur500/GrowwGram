@@ -1,0 +1,81 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+img {
+  cursor: pointer;
+}
+
+.fa-2x {
+  font-size: 1.7em;
+}
+
+@media screen and (min-width: 500px) {
+  .main21Content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1030px;
+  }
+}
+
+div [data-testid= "three-dots-loading"] {
+  width: 80%;
+  max-width: 1030px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.image{
+  opacity: 0;
+}
+  .thumb {
+    opacity: 1;
+    filter: blur(10px);
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+  }
+
+.mi21Thumb { 
+   
+  opacity: 0;
+  }
+
+.mi21ThumbFull {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+ }
+
+
+.fd21InsideContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 3rem;
+}
+
+.fd21Suggestions {
+  height: 40vh;
+  font-weight: 600;
+  position: relative;
+  flex-direction: column;
+  top: 6rem;
+  position: sticky;
+  color:var(--secondary);
+}
+
+@media only screen and (min-width: 1058px) {
+  div [data-testid="three-dots-loading"] {
+    width: 30%;
+    max-width: 1030px;
+    justify-content:unset;
+    text-align: unset;
+  }
+}
+
+.fd21Error {
+  text-align: center;
+  width: 80%;
+}

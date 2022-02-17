@@ -1,0 +1,49 @@
+.pp21Container {
+  margin-top: 24px;
+}
+.pp21DisplayButtons {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--grey);
+  padding: 12px 0px;
+  position: sticky;
+  top: 70px;
+  z-index: 30;
+  background-color: var(--background);}
+
+.gl21Loader{
+  margin-left:50%;
+  transform: translateX(-50%);
+  width:55vw;
+  height:55vh;
+}
+
+.pp21Button {
+  padding: 8px 24px;
+  border: 1px solid var(--textGrey);
+  color: var(--textGrey);
+  border-radius: 8px;
+  margin: 0px 8px;
+  margin-bottom: 30px;
+}
+.pp21Button.active {
+  color: var(--logo);
+  border: 1px solid var(--logo);
+}
+.pp21ListContainer {
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .pp21ListContainer {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pp21Container {
+    margin-top: 12px;
+  }
+  .pp21ListContainer {
+    width: 100%;
+  }
+}

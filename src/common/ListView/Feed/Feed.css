@@ -1,0 +1,23 @@
+.fd21Feed {
+  height: 100%;
+  border-radius: 3px;
+  z-index: 5;
+  max-width: 750px;
+  border : solid 1px var(--grey);
+
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+

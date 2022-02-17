@@ -1,0 +1,25 @@
+.hnav21Container {
+  flex: 0.7 1;
+  justify-content: space-between;
+  color: var(--secondary);
+}
+.fa-ellipsis-h:before{
+   color:var(--secondary);
+}
+.fa{
+  cursor:pointer;
+}
+.hd21UserImage{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid 2px var(--borderImage);
+  padding: 1px 1px;
+
+}
+@media only screen and (max-width: 840px) {
+  .hnav21Container i {
+    width: 1rem;
+    margin-right: 20px;
+  }
+}

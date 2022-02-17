@@ -1,0 +1,16 @@
+.es01Container {
+  flex-direction: column;
+  justify-content: center;
+  color:var(--secondary);
+  font-size:larger;
+  position: absolute;
+  width:fit-content;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.es01Container a {
+ font-weight: bolder;
+}
+

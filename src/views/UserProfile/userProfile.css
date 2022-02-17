@@ -1,0 +1,28 @@
+.up21Container {
+  width: 60%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+.up21LoaderInfo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.up21MainContainer{
+  width:100%;
+  height: 100%;
+  background-color: var(--background);
+}
+@media only screen and (max-width: 1024px) {
+  .up21Container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .up21Container {
+    width: 100%;
+  }
+}
