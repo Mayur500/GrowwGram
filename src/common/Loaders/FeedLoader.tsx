@@ -13,8 +13,8 @@ const FeedLoader = () => {
            width={600}
            height={600}
            viewBox="0 0 400 400"
-           backgroundColor="#d3d3d3"
-           foregroundColor="#ecebeb"
+           foregroundColor='var(--background)'
+           backgroundColor='var(--grey)'
          >
            <circle cx="31" cy="28" r="15" />
            <rect x="60" y="14" rx="2" ry="2" width="140" height="10" />

@@ -7,7 +7,7 @@ import { setStorage, getStorage } from "utils/storage";
 import { deleteStorage } from "utils/storage";
 import { fetchingRandomPosts } from "store/actions/feeds";
 import { useAppDispatch ,useAppSelector} from "store/hooks";
-import { useNavigate ,Link} from 'react-router-dom';
+import { useNavigate ,Link, NavigationType} from 'react-router-dom';
 import { fetchingUserPhoto, fetchingUserData } from "store/actions/userProfile";
 import Stories from "common/Stories/Stories";
 const HeaderNavigation = () => {
@@ -24,21 +24,22 @@ const HeaderNavigation = () => {
   const [isdark, setDark] = useThemeDetector();
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
+
+
   useEffect(() => {
   
     if (getStorage('theme')) {
       const theme = getStorage('theme');
-      console.log(theme);
       setDark(theme === 'dark' ? true : false);
+      document.documentElement.children[1].setAttribute('data-theme', theme);
     }
-    if(fetchingPosts || loadingPhotos||loadingUser){
-    document.documentElement.children[1].setAttribute('data-theme', 'light');
-    }
+
     else{
       document.documentElement.children[1].setAttribute('data-theme', isdark ? 'dark' : 'light');
     }
 
-  }, [isdark,fetchingPosts,loadingPhotos,loadingUser]);
+
+  }, [isdark]);
 
   const toggleTheme = () => {
     setDark(!isdark);
@@ -60,9 +61,7 @@ const HeaderNavigation = () => {
         if (window.location.pathname.startsWith('/profile')) {
           const user = window.location.pathname.substring(9);
           deleteStorage(`user_${user}`);
-          console.log(user);
-          dispatch(fetchingUserData(user));
-          dispatch(fetchingUserPhoto(user));
+          navigate(`/profile/${user}`)
         }
         else {
           deleteStorage('posts');

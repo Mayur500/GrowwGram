@@ -6,8 +6,8 @@ const StoryLoader = () => {
   <div className='st21Loader'>
   <ContentLoader
       viewBox="0 0 600 200"
-      backgroundColor="#d3d3d3"
-      foregroundColor="#ecebeb"
+      foregroundColor='var(--background)'
+      backgroundColor='var(--grey)'
    >
     <circle cx="50" cy="70" r="20" />
     <rect x="10" y="100" rx="5" ry="5" width="80" height="10" />

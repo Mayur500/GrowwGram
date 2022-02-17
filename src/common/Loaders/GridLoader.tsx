@@ -10,8 +10,8 @@ const GridLoader = () => {
         iterator.map(item => (
           <ContentLoader
           viewBox="0 0 400 200"
-          foregroundColor="#d3d3d3"
-          backgroundColor="#ecebeb"
+          foregroundColor='var(--background)'
+          backgroundColor='var(--grey)'
           key={item}
           
        >

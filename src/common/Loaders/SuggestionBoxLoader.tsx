@@ -11,8 +11,8 @@ const SuggestionLoader = () => {
             key={item}
             height={150}
             width={150}
-            foregroundColor="#d3d3d3"
-            backgroundColor="#ecebeb"
+            foregroundColor='var(--background)'
+            backgroundColor='var(--grey)'
           >
             <circle cx="25" cy="50" r="20" />
             <rect x="60" y="45" rx="3" ry="3" width="120" height="7" />

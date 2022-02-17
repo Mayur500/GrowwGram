@@ -6,8 +6,8 @@ const UserInfoLoader = () => (
  <ContentLoader
 
  viewBox="0 0 250 100"
- foregroundColor="#d3d3d3"
- backgroundColor="#ecebeb"
+ foregroundColor='var(--background)'
+ backgroundColor='var(--grey)'
  width="500"
  height="200"
 >
