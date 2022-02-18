@@ -43,8 +43,8 @@ const Feeds = () => {
   }
 
 
-  const ApiError = <div data-testid="three-dots-loading"><h1> Api Error </h1> </div>
-  const FetchApiError = <h1 className="fd21Error" key={0}> Api Error </h1>
+  const ApiError = <div data-testid="three-dots-loading"><h1> Network Error </h1> </div>
+  const FetchApiError = <h1 className="fd21Error" key={0}> Network Error </h1>
   return (
     <>
       {

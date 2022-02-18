@@ -37,9 +37,7 @@ export const fetchingUserData = (profile: string): AppThunk => {
       else {
         const response = await unsplash.get(url);
         let res = [];
-        if (keysUserLength < USER_STORAGE_SIZE) {
-          setStorage(`user_${profile}`, [response.data ]);
-        }
+        setStorage(`user_${profile}`, [response.data ]);
         const result = response.data as User
         dispatch({ type: FETCH_USER_SUCCESS, payload: result});
       }
@@ -94,7 +92,6 @@ export const fetchingUserMorePhoto = (profile: string): AppThunk => {
       dispatch({ type: FETCH_USER_MORE_PHOTO_REQUEST });
       const response = await unsplash.get(url);
       if (getStorage(`user_${profile}`) && getStorage(`user_${profile}`)[1] && getStorage(`user_${profile}`)[1].length < USER_STORAGE_SIZE) {
-        console.log(getStorage(`user_${profile}`)[1].length);
         const Photos = getStorage(`user_${profile}`)[1];
         const updatedPhotos = [...Photos, ...response.data];
 

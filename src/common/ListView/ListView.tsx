@@ -26,10 +26,10 @@ const ListView = () => {
 
   const isNotFetching = !loadingMorePhotos;
 
-  const FetchApiError = <h1 className="fd21Error" key={0} > Api Error </h1>
+  const FetchApiError = <h1 className="fd21Error" key={0} > Network Error </h1>
 
   const getMorePhotos = () => {
-    if (isNotFetching) {
+    if (isNotFetching && hasMore) {
       dispatch(fetchingUserMorePhoto(`${username.id}`));
     }
   }
@@ -44,7 +44,7 @@ const ListView = () => {
       <InfiniteScroll
         pageStart={0}
         loadMore={getMorePhotos}
-        hasMore={hasMore}
+        hasMore={true}
         loader={userMorePhotosError ? FetchApiError : <ThreeDots key={0} />}>
         <div className="fd21Content main21Content">
           <div className="fd21InsideContainer">

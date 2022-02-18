@@ -29,10 +29,10 @@ const GridView = () => {
   const filterPost = userPhotos.find((userPhoto : UserPhotos)=> photoId === userPhoto.id);
   const isNotFetching = !loadingMorePhotos;
 
-  const FetchApiError = <h1 key={0} className="fd21Error"> Api Error </h1>
+  const FetchApiError = <h1 key={0} className="fd21Error"> Network Error </h1>
 
   const getMorePhotos = () => {
-    if (isNotFetching) {
+    if (isNotFetching && hasMore) {
       dispatch(fetchingUserMorePhoto(`${username.id}`));
     }
   }
@@ -54,7 +54,7 @@ const GridView = () => {
             <InfiniteScroll
               pageStart={0}
               loadMore={getMorePhotos}
-              hasMore={hasMore}
+              hasMore={true}
               loader={userMorePhotosError ? FetchApiError : <ThreeDots key={0} />}
             >
               {userPhotos.map((photo: UserPhotos, index: number) => (

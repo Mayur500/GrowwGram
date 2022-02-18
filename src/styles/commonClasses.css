@@ -78,4 +78,5 @@ div [data-testid= "three-dots-loading"] {
 .fd21Error {
   text-align: center;
   width: 80%;
+  color : var(--secondary);
 }
